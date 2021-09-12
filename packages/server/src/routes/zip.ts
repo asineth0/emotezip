@@ -44,7 +44,7 @@ app.post("/", async (req: Request, res: Response) => {
         );
 
         zip.file(
-          `${emote.name}_${emote.id}.png`,
+          `${emote.name}.png`,
           await sharp(data)
             .resize(req.body.size)
             .png({
