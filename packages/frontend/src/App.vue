@@ -325,7 +325,7 @@ const download = async () => {
 
   const url = URL.createObjectURL(data);
   const el = document.createElement("a");
-  el.download = `${username.value}.zip`;
+  el.download = `${username.value}-${+new Date()}.zip`;
   el.href = url;
   el.click();
   URL.revokeObjectURL(url); // free up mem on next GC.
