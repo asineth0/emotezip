@@ -1,0 +1,7 @@
+node_modules
+yarn-error.log
+npm-error.log
+.vscode
+.env
+server/dist
+frontend/dist
